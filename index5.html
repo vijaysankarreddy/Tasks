@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="styles5.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Contact Form</h1>
+        <form id="contactForm" onsubmit="return validateForm()">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name">
+            <p id="nameError" class="error"></p>
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" placeholder="Enter your email">
+            <p id="emailError" class="error"></p>
+
+            <label for="website">Website URL:</label>
+            <input type="text" id="website" name="website" placeholder="Enter your website URL">
+            <p id="websiteError" class="error"></p>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Enter your message"></textarea>
+            <p id="messageError" class="error"></p>
+
+            <button type="submit">Submit</button>
+        </form>
+        <p id="formStatus" class="error"></p>
+    </div>
+    <script src="script5.js"></script>
+</body>
+</html>
